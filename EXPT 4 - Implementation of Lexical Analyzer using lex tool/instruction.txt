@@ -1,0 +1,20 @@
+WINDOWS INSTALLATION:
+    download the lex tool from geeeksforgeeks(LINK: https://www.geeksforgeeks.org/how-to-install-flex-on-windows/#:~:text=Step%201%3A%20Visit%20this%20URL,executable%20file%20will%20start%20shortly.)
+   (or)
+    LINK: https://techapple.net/2014/07/flex-windows-lex-and-yacc-flex-and-bison-installer-for-windows-xp788-1/
+
+UBUNTU INSTALLATION:
+    sudo apt-get update
+    sudo apt-get install flex
+    sudo apt-get upgrade
+
+COMMANDS TO RUN CODE(LEX):
+    lex filename.l
+    cc lex.yy.c
+    filename.exe(in windows) or ./a.out (in ubuntu terminal)
+
+COMMANDS TO RUN CODE(LEX and YACC):
+    lex filename.l
+    yacc -d filename.y
+    gcc lex.yy.c y.tab.c 
+    filename.exe(in windows) or ./a.out (in ubuntu terminal)
