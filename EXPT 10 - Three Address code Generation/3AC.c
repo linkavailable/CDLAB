@@ -46,6 +46,8 @@ for(i=4;i<len-2;i+=2)
 itoa(j,d1,7);
 strcat(d2,d1);
 strcpy(s[j].temp,d2);
+strcpy(d1,"");
+strcpy(d2,"t");
 if(!strcmp(s[i+1].data,"*"))
 fprintf(f2,"\n%s=%s*%s",s[j].temp,s[j-1].temp,s[i+2].data);
 if(!strcmp(s[i+1].data,"/"))
@@ -54,8 +56,6 @@ else if(!strcmp(s[i+1].data,"+"))
 fprintf(f2,"\n%s=%s+%s",s[j].temp,s[j-1].temp,s[i+2].data);
 else if(!strcmp(s[i+1].data,"-"))
 fprintf(f2,"\n%s=%s-%s",s[j].temp,s[j-1].temp,s[i+2].data);
-strcpy(d1,"");
-strcpy(d2,"t");
 j++;
 }
 fprintf(f2,"\n%s=%s",s[0].data,s[j-1].temp);
